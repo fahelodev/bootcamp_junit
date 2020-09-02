@@ -1,3 +1,4 @@
+import javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;
 import java.util.ArrayList;
 
 public class e1_imprimirCuadradosInt {
@@ -21,6 +22,7 @@ public class e1_imprimirCuadradosInt {
                 concatenar = concatenar+Integer.toString(conversor);
         }
         System.out.println(concatenar);
+        numero = Integer.parseInt(concatenar);
         return numero;
     }
 
