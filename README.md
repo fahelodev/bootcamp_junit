@@ -1,2 +1,7 @@
 # bootcamp_Junit
-creacion de ejemplos para bootcamp de Junit
+Inicio Bootcamp Tsoft
+
+Temas a Revisar 
+    Junit
+        Pruebas Manuales vs Pruebas Automatizadas
+        
