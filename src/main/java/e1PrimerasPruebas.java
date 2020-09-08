@@ -1,7 +1,6 @@
-import javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;
 import java.util.ArrayList;
 
-public class e1_imprimirCuadradosInt {
+public class e1PrimerasPruebas {
 
     /*
     * Imprimir el cuadrado de los digitos de un numero
@@ -24,12 +23,5 @@ public class e1_imprimirCuadradosInt {
         System.out.println(concatenar);
         numero = Integer.parseInt(concatenar);
         return numero;
-    }
-
-    public static void main (String [] args){
-
-        imprimirCuadradosInt(259);
-        imprimirCuadradosInt(111);
-        imprimirCuadradosInt(555);
     }
 }
