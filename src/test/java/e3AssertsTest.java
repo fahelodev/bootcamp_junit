@@ -23,7 +23,8 @@ public class e3AssertsTest {
     public void cadenas (){
         String s1 = "bootCamp";
         String s2 = "Tsoft";
-        assertEquals("Correcto","Hola","Hola");
+        String s3 = "Tsoft";
+        assertEquals("Correcto",s2,s3);
         assertNotEquals("Correcto",s1,s2);
     }
 
@@ -57,6 +58,23 @@ public class e3AssertsTest {
         Date fecha2 = new Date();
         assertEquals(fecha1,fecha2);
         //assertSame(fecha1,fecha2);
+
+    }
+
+    @Test(expected = ArithmeticException.class)
+    public void esperado (){
+        int num1 = 10;
+        int num2= 0;
+        int divcero = num1/num2;
+    }
+
+    @Test(timeout = 2000)
+    public void timeout (){
+        try {
+            Thread.sleep(1000);
+        }catch (InterruptedException e){
+
+        };
 
     }
 }
