@@ -10,7 +10,11 @@ public class JunitDiaUno {
                 RES: 42581
      */
 
-    public static int cuadradoDeDigito(int numero){
+    public JunitDiaUno(){
+
+    }
+
+    public int cuadradoDeDigito(int numero){
 
         //1. transformar el numero a un String
         int resultadoInt;
@@ -31,9 +35,11 @@ public class JunitDiaUno {
 
     public static void main(String[] fae){
 
-        System.out.println("Resultado: "+cuadradoDeDigito(259));
-        System.out.println("Resultado: "+cuadradoDeDigito(111));
-        System.out.println("Resultado: "+cuadradoDeDigito(999));
+        JunitDiaUno obj = new JunitDiaUno();
+
+        System.out.println("Resultado: "+obj.cuadradoDeDigito(259));
+        System.out.println("Resultado: "+obj.cuadradoDeDigito(111));
+        System.out.println("Resultado: "+obj.cuadradoDeDigito(999));
     }
 
 
