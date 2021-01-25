@@ -6,7 +6,13 @@ import org.junit.Test;
 public class JunitDiaUnoTest {
 
     @Test
-    public void miPrimerTest(){
-        assertTrue(true);
+    public void cuacradoDeDigitoExitoso(){
+
+        JunitDiaUno obj = new JunitDiaUno();
+        int numeroavalidar = obj.cuadradoDeDigitos(255);
+        assertEquals(42525,numeroavalidar);
+
     }
+
+
 }
