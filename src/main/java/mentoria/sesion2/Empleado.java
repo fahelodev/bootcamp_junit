@@ -1,4 +1,4 @@
-package mentoria;
+package mentoria.sesion2;
 
 public class Empleado extends Persona{
 

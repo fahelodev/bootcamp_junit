@@ -1,6 +1,8 @@
-package mentoria;
+package mentoria.sesion1;
 
 import static org.junit.Assert.*;
+
+import mentoria.sesion1.JunitDiaUno;
 import org.junit.Test;
 
 public class JunitDiaUnoTest {

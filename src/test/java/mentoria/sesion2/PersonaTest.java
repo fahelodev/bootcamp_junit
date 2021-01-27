@@ -1,5 +1,6 @@
-package mentoria;
+package mentoria.sesion2;
 
+import mentoria.sesion2.Persona;
 import org.junit.*;
 
 import static org.junit.Assert.*;

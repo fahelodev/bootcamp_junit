@@ -1,4 +1,4 @@
-package mentoria;
+package mentoria.sesion1;
 
 public class JunitDiaUno {
 
