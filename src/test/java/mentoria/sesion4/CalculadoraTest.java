@@ -1,17 +1,25 @@
 package mentoria.sesion4;
 
+
+/*  Pruebas a realizar para metodo Multiplicacion
+            +*+ = +
+            +*- = -
+            -*+ = -
+            -*- = +
+  */
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
 
-@RunWith(value = Parameterized.class)
+@RunWith( value = Parameterized.class)
 public class CalculadoraTest {
+
     //atributos
     private int num1,num2,resultado;
 
@@ -22,26 +30,23 @@ public class CalculadoraTest {
         this.resultado = resultado;
     }
 
-    //metodo para iterar
+    //metodo para poder iterar los datos parametrizados
     @Parameterized.Parameters
     public static Iterable<Object[]> getData(){
-        List<Object[]> obj = new ArrayList<>();
-        obj.add(new Object[] {5,5,25});
-        return obj;
+        List<Object[]> objeto = new ArrayList<>();
+        objeto.add( new Object[] {5,5,25});
+        objeto.add( new Object[] {5,-5,-25});
+        objeto.add( new Object[] {-5,-5,25});
+        objeto.add( new Object[] {-5,5,-25});
+        return objeto;
     }
 
     @Test
     public void signosAlMultiplicar(){
-        /*  Pruebas a realizar para metodo Multiplicacion
-            +*+ = +
-            +*- = -
-            -*+ = -
-            -*- = +
-         */
-        Calculadora calculadoraTest = new Calculadora();
-        int operacion = calculadoraTest.Multiplicacion(num1,num2);
-        assertEquals(operacion,resultado);
-    }
 
+        Calculadora calculadoraTest = new Calculadora();
+        int res = calculadoraTest.Multiplicacion(num1,num2); //+*+
+        assertEquals(resultado,res);
+    }
 
 }

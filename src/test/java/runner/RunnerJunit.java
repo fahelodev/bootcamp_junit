@@ -1,4 +1,4 @@
-package mentoria.sesion4;
+package runner;
 
 import mentoria.sesion2.EmpleadoTest;
 import mentoria.sesion2.PersonaTest;
@@ -9,5 +9,7 @@ import org.junit.runners.Suite;
 @Suite.SuiteClasses({
         EmpleadoTest.class,
         PersonaTest.class
+
 })
-public class SuiteEjecucion {}
+public class RunnerJunit {
+}
